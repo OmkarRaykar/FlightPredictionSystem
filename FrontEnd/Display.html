@@ -35,8 +35,35 @@
 
 </head>
 <style>
+    #customers {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 5%;
+    }
 
+    #customers td,
+    #customers th {
+        border: 1px solid #171947;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        font-size: large;
+        color: #171947;
+    }
 </style>
+
 <body>
 
 
@@ -68,7 +95,7 @@
                     <a href="#top">
                         <span class="rect"></span>
                         <span class="circle"></span>
-                        Your journey details
+                        Expected Flight Rate Details
                     </a>
                 </li>
             </ul>
@@ -86,7 +113,7 @@
         <section id="contact" class="content-section">
             <div id="contact-content">
                 <div style="display: flex;align-items: flex-start;">
-                    <h1>Your Journey<em> <br>Details</em></h1>
+                    <h1>Expected Flight <br> <em style="color: #171947;">Rate Details</em></h1>
 
                 </div>
                 <div class="section-content">
@@ -94,7 +121,27 @@
 
                         <div style="display: flex;
                                 flex-direction: row;">
-                
+
+                            <table id="customers">
+                                <tr>
+                                    <th>Airlines</th>
+                                    <th>Date</th>
+                                    <th>Source</th>
+                                    <th>Destination</th>
+                                    <th>Timings</th>
+                                    <th>Price/Person</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+
                         </div>
                     </div>
                 </div>

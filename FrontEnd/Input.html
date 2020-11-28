@@ -33,96 +33,173 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
 </head>
 <style>
-
-body {
-  background-image: url('slide_1.jpg');
-}
+    /* body {
+        background-image: url('./img/slide_1.jpg')
+    } */
 
     button {
-  width: 50%;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+        width: 50%;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
     .dropdown-item {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
+        background-color: white;
+        color: black;
+        border: 2px solid #45489A;
+    }
 
-.dropdown-item:hover {
-  background-color: #008CBA;
-  color: white;
-}
-
+    .dropdown-item:hover {
+        background-color: #45489A;
+        color: white;
+    }
 </style>
 
-<body> <br><br><br><br><br><br>
-                <div align="center">
-                    <h1 align="center">Choose Your<em>      <br>Journey</em></h1>
+<body>
+    <!-- style="background-image: url('./img/slide_1.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; margin-top: 10%;"  -->
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <a href="#">Home</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#top">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Journey Details
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
 
+        </ul>
+    </div>
+    <div class="page-content">
+        <div style="display: flex; align-items: flex-start; padding-top: 5%;">
+            <b style="font-size: xx-large; font-style: italic;color: black;" align="center">
+                Choose Your<br><em style="color: #45489A;">Journey </em>
+            </b>
+
+        </div>
+        <div style="display: flex; flex-direction: column; margin-top: 2%;" align="center">
+            <!-- Airlines -->
+            <div class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 25%;">
+                <div class="form-group">
+                    <label style="font-size: large; color: black;" for="exampleFormControlSelect1">Airlines</label>
+                    <select class="form-control" id="exampleFormControlSelect2">
+                        <option value="" selected disabled hidden>Select Destination</option>
+                        <option>Air India</option>
+                        <option>Jet Airways</option>
+                        <option>Spice Jet</option>
+                        <option>IndiGo</option>
+                        <option>GoAir</option>
+                        <option>Vistara</option>
+                        <option>Vistara Premium economy</option>
+                        <option>Air Asia</option>
+                        <option>Multiple carriers</option>
+
+                    </select>
                 </div>
-                <div class="section-content" align="center">
-                    <div class="bootstrap-iso">
+            </div>
+            <!-- Date Picker -->
+            <div class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 25%;">
+                <b style="font-size: large; color: black;">Flight Date:</b>
 
-                        <div class="col-md-6 col-sm-6 col-xs-12" align="center">
-                            Flight Date:
-                            <div class="input-group date" data-provide="datepicker">
-                                <input type="text" class="form-control">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <br/>
-                        <div style="display: flex;
-                                flex-direction: row;">
-                            <div>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Source
-                                    </button>
-                        
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                        <button class="dropdown-item" type="button">Banglore</button>
-                                        <button class="dropdown-item" type="button">Chennai</button>
-                                        <button class="dropdown-item" type="button">Delhi</button>
-                                        <button class="dropdown-item" type="button">Kolkata</button>
-                                        <button class="dropdown-item" type="button">Mumbai</button>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Destination
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">Banglore</button>
-                                    <button class="dropdown-item" type="button">Cochin</button>
-                                    <button class="dropdown-item" type="button">Delhi</button>
-                                    <button class="dropdown-item" type="button">Hyderabad</button>
-                                    <button class="dropdown-item" type="button">Kolkata</button>
-                                    <button class="dropdown-item" type="button">New Delhi</button>
-                                   
-                                </div>
-                            </div>
-                        </div> <br><br>
-                        <button class="dropdown-item" type="button">Get Rates</button>
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
                     </div>
                 </div>
+            </div>
 
+            <!-- Source - Destination -->
+            <div
+                style="display: flex; flex-direction: row; margin-left: 25%; margin-top: 30px; align-content: space-between;">
+
+                <div style="margin-left: 15%;"> </div>
+
+                <div class="form-group">
+                    <label style="font-size: large; color: black;" for="exampleFormControlSelect1">Source</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="" selected disabled hidden>Select Source</option>
+                        <option>Banglore</option>
+                        <option>Chennai</option>
+                        <option>Delhi</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                    </select>
+                </div>
+
+                <div style="margin-left: 10%;"> </div>
+                <div class="form-group">
+                    <label style="font-size: large; color: black;" for="exampleFormControlSelect1">Destination</label>
+                    <select class="form-control" id="exampleFormControlSelect2">
+                        <option value="" selected disabled hidden>Select Destination</option>
+                        <option>Banglore</option>
+                        <option>Chennai</option>
+                        <option>Delhi</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Submit Button -->
+            <div style="margin-top: 30px;">
+                <button class="dropdown-item" type="button">Get Rates</button>
+            </div>
+
+        </div>
+    </div>
     <script>$('.datepicker').datepicker();</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

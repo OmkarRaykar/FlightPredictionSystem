@@ -34,16 +34,47 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
 </head>
+<style>
 
-<body>
-                <div>
-                    <h1>Choose Your<em> <br>Journey</em></h1>
+body {
+  background-image: url('slide_1.jpg');
+}
+
+    button {
+  width: 50%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+    .dropdown-item {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.dropdown-item:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+
+<body> <br><br><br><br><br><br>
+                <div align="center">
+                    <h1 align="center">Choose Your<em>      <br>Journey</em></h1>
 
                 </div>
-                <div class="section-content">
+                <div class="section-content" align="center">
                     <div class="bootstrap-iso">
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12" align="center">
                             Flight Date:
                             <div class="input-group date" data-provide="datepicker">
                                 <input type="text" class="form-control">
@@ -61,6 +92,7 @@
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Source
                                     </button>
+                        
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                         <button class="dropdown-item" type="button">Banglore</button>
                                         <button class="dropdown-item" type="button">Chennai</button>
